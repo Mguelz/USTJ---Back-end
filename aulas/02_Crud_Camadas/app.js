@@ -31,8 +31,9 @@ app.delete("/users/:id", (req, res) => userController.deleteUser(req, res));
 
 // aula 20/03/2024
 app.get("/perfil", (req, res) => perfilController.getAllPerfil(req, res)); 
-app.get("/perfil/ :user_id", (req, res) => perfilController.getAllPerfilEnd(req, res));
-
+app.get("/perfil/:user_id", (req, res) => perfilController.getAllPerfilEnd(req, res));
+app.get("/perfil/:user_id/address/:adress_id", (req, res) => perfilController.getOneEnd(req, res));
+app.post("/perfil/", (req, res) => perfilController.createPerfil(req, res));
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);

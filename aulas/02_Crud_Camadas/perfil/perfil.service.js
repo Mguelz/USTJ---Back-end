@@ -41,6 +41,21 @@ class PerfilService {
     //         ));
 
     // }
+    findOneEnd(user_id, adress_id) {
+        return perfis.find((perfil) => perfil.user_id === user_id && perfil.adress_id === adress_id);
+    }
+
+    create(user_id, adress_id, profile_endereco, profile_cidade, country_id) {
+        adress_id = uuidv4();
+        const novoPerfil = new Perfil();
+        user_id,
+            adress_id,
+            profile_endereco,
+            profile_cidade,
+            country_id
+        perfis.push(novoPerfil);
+        return novoPerfil;
+    }
 }
 
 module.exports = PerfilService;

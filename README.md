@@ -48,3 +48,5 @@ npm install express - para usar a função app.listem()
 npm i - instala todas as dependencias (deve estar na main) [precisa estar na pasta do arquivo app.js]
 
 SonarLint - detecta erros
+
+--watch app,js
