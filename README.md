@@ -50,3 +50,15 @@ npm i - instala todas as dependencias (deve estar na main) [precisa estar na pas
 SonarLint - detecta erros
 
 --watch app,js
+
+
+
+colcoar a descricao do projeto no trello
+cada ingresso deve ser unico
+separar os shows por genero
+só a pessoa entre com o ingresso? ou pode ser ingresso em posse
+
+fazer end-points para cada funcionalidade
++1 funcionalidade - cadastro de generos
++1 funcionalidade - cadastro de áreas do show (vip, camarote, pista, etc)
+
